@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bolt-js-app
+spec:
+  selector:
+    matchLabels:
+      app: bolt-js-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bolt-js-app
+    spec:
+      containers:
+      - name: bolt-js-app
+        image: okteto.dev/bolt-js-app:latest
+        ports:
+        - containerPort: 3002

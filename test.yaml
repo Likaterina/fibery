@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: new-image
+spec:
+  template:
+    metadata:
+      name: new-image-pod
+    spec:
+      containers:
+      - name: new-image
+        image: forketyfork/new-image
+      restartPolicy: Never
