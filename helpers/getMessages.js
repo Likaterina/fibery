@@ -1,4 +1,4 @@
-const { cache } = require('../cach')
+const { cache } = require('../cache')
 const { getHistory } = require('../slack-api')
 
 

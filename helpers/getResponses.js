@@ -1,5 +1,5 @@
 const { isArray, min, max, mean } = require('lodash')
-const { cache } = require('../cach')
+const { cache } = require('../cache')
 
 
 const getResponses = async ({
